@@ -1,0 +1,15 @@
+.btn{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 42px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    line-height: 1; 
+    background: $red;
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+        background: #9A9A9A;
+    }
+}

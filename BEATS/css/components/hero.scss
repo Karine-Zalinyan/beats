@@ -1,0 +1,44 @@
+.hero{
+    background-color: $lightgrey;
+    height: 100vh;
+    min-height: 650px;
+    color: $black;
+    position: relative;
+
+    &::before{
+        content: url(../../img/Rectangle\ 14.svg);
+        position: absolute;
+        bottom: -35px;
+        right: 2%;
+    }
+}
+
+.hero__title-section{
+    width: 40%;
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 32px 0 45px 0;
+    background: url(../../img/Ellipse\ 5.png) left 96% top 72% / 52% auto no-repeat;
+
+}
+
+.hero__main-title{
+    font-family: "Play";
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: 21px;
+    text-transform: uppercase;
+}
+
+.hero__title-desc{
+    font-size: 21px;
+    margin-bottom: 45px;
+    padding-right: 10%;
+    line-height: 1.1;
+}
