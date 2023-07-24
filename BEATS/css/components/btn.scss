@@ -1,5 +1,6 @@
 .btn{
     font-size: 18px;
+    font-family: "Play";
     font-weight: bold;
     padding: 15px 42px;
     text-transform: uppercase;
@@ -8,8 +9,28 @@
     background: $red;
     color: white;
     text-decoration: none;
+    border: none;
 
     &:hover{
         background: #9A9A9A;
+        color: black;
+    }
+
+    &--theme--red{
+        padding: 21px 41px;
+        font-size: 16px;
+    }
+
+    &--theme--transperent{
+        background: transparent;
+        text-transform: none;
+        font-weight: normal;
+        font-size: 16px;
+        margin-left: -25px;
+
+        &:hover{
+            background: transparent;
+            color: #CA1B36;
+        }
     }
 }
