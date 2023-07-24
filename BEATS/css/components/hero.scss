@@ -6,7 +6,7 @@
     position: relative;
 
     &::before{
-        content: url(../../img/rectangle14.svg);
+        content: url(../img/rectangle14.svg);
         position: absolute;
         bottom: -30px;
         right: 2%;
@@ -23,7 +23,7 @@
     justify-content: space-between;
     height: 100%;
     padding: 32px 0 45px 0;
-    background: url(../../img/ellipse5.png) left 96% top 72% / 52% auto no-repeat;
+    background: url(../img/ellipse5.png) left 96% top 72% / 52% auto no-repeat;
 
 }
 
