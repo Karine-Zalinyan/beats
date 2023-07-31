@@ -3,11 +3,11 @@
 }
 
 .benefit__title{
-    font-size: 24px;
+    font-size: rem(24px);
     font-family: "Play";
     font-weight: bold;
-    margin-top: 14px;
-    margin-bottom: 3px;
+    margin-top: rem(14px);
+    margin-bottom: rem(3px);
 }
 
 .benefit__decs{
@@ -16,8 +16,8 @@
 
 .benefit__image-wrapper{
     display: inline-block;
-    width: 126px;
-    height: 126px;
+    width: rem(126px);
+    height: rem(126px);
     position: relative;
     background: #F2F5F4;
     border-radius: 50%;
@@ -25,8 +25,8 @@
 }
 
 .benefit__icon{
-    width: 68px;
-    height: 68px;
+    width: rem(68px);
+    height: rem(68px);
     position: absolute;
     top: 50%;
     left: 50%;

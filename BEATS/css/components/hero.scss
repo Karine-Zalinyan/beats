@@ -1,20 +1,46 @@
 .hero{
     background-color: $lightgrey;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(652px);
     color: $black;
     position: relative;
 
     &::before{
         content: url(../img/rectangle14.svg);
         position: absolute;
-        bottom: -30px;
+        bottom: rem(-30px);
         right: 2%;
     }
+
+&::before, &::after {
+    @include tablets{
+        display: none;
+    }
+}
 }
 
 .hero__title-section{
     width: 40%;
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+
+    &::before{
+        content: url(../img/ellipse5.png);
+    }
+}
+}
+
+.hero__icons-section{
+    @include tablets {
+        display: none;
+    }
 }
 
 .hero__container{
@@ -22,23 +48,30 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 32px 0 45px 0;
+    padding: rem(32px) 0 rem(45px) 0;
     background: url(../img/ellipse5.png) left 96% top 72% / 52% auto no-repeat;
 
+    @include tablets {
+        background: none;
+    }
 }
 
 .hero__main-title{
     font-family: "Play";
-    font-size: 48px;
+    font-size: rem(48px);
     line-height: 1.1;
     font-weight: bold;
-    margin-bottom: 21px;
+    margin-bottom: rem(21px);
     text-transform: uppercase;
 }
 
 .hero__title-desc{
-    font-size: 21px;
-    margin-bottom: 45px;
+    font-size: rem(21px);
+    margin-bottom: rem(45px);
     padding-right: 10%;
     line-height: 1.1;
+
+    @include tablets{
+        padding: 0 25%;
+    }
 }

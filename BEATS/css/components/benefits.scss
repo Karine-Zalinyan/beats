@@ -1,6 +1,6 @@
 .benefits{
     display: flex;
-    margin-top: 67px;
+    margin-top: rem(67px);
 }
 
 .benefits__item {
@@ -11,7 +11,7 @@
     &::before{
         content: url(../img/combinedshape.svg);
         position: absolute;
-        top: 58px;
+        top: rem(58px);
         right: 0;
         transform: translateX(50%);
     }

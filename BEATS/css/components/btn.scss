@@ -1,10 +1,10 @@
 .btn{
-    font-size: 18px;
+    font-size: rem(18px);
     font-family: "Play";
     font-weight: bold;
-    padding: 15px 42px;
+    padding: rem(15px) rem(42px);
     text-transform: uppercase;
-    border-radius: 100px;
+    border-radius: rem(100px);
     line-height: 1; 
     background: $red;
     color: white;
@@ -17,16 +17,16 @@
     }
 
     &--theme--red{
-        padding: 21px 41px;
-        font-size: 16px;
+        padding: rem(21px) rem(41px);
+        font-size: rem(16px);
     }
 
     &--theme--transperent{
         background: transparent;
         text-transform: none;
         font-weight: normal;
-        font-size: 16px;
-        margin-left: -25px;
+        font-size: rem(16px);
+        margin-left: rem(-25px);
 
         &:hover{
             background: transparent;

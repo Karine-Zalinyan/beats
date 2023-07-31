@@ -1,5 +1,19 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap");
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -17,13 +31,13 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto;
   position: relative;
 }
@@ -72,19 +86,54 @@ img {
 .hero {
   background-color: #F5F5F5;
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.75rem;
   color: #292929;
   position: relative;
 }
 .hero::before {
   content: url(../img/rectangle14.svg);
   position: absolute;
-  bottom: -30px;
+  bottom: -1.875rem;
   right: 2%;
+}
+@media screen and (max-width: 768px) {
+  .hero::before, .hero::after {
+    display: none;
+  }
 }
 
 .hero__title-section {
   width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .hero__title-section {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero__title-section::before {
+    content: url(../img/ellipse5.png);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__icons-section {
+    display: none;
+  }
 }
 
 .hero__container {
@@ -99,24 +148,34 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  padding: 32px 0 45px 0;
+  padding: 2rem 0 2.8125rem 0;
   background: url(../img/ellipse5.png) left 96% top 72%/52% auto no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .hero__container {
+    background: none;
+  }
 }
 
 .hero__main-title {
   font-family: "Play";
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 1.1;
   font-weight: bold;
-  margin-bottom: 21px;
+  margin-bottom: 1.3125rem;
   text-transform: uppercase;
 }
 
 .hero__title-desc {
-  font-size: 21px;
-  margin-bottom: 45px;
+  font-size: 1.3125rem;
+  margin-bottom: 2.8125rem;
   padding-right: 10%;
   line-height: 1.1;
+}
+@media screen and (max-width: 768px) {
+  .hero__title-desc {
+    padding: 0 25%;
+  }
 }
 
 header {
@@ -131,26 +190,9 @@ header {
           justify-content: space-between;
 }
 
-.menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.menu__item {
-  font-size: 18px;
-  margin-right: 28px;
-}
-.menu__itemlast-child {
-  margin-right: 22px;
-}
-
 .phone-number {
   font-family: "Play";
-  font-size: 18px;
+  font-size: 1.125rem;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,8 +204,37 @@ header {
 
 .phone-number__icon-elem {
   width: 12x;
-  height: 12px;
-  margin-right: 8px;
+  height: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .phone-number.header__phone-number {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__item {
+  font-size: 1.125rem;
+  margin-right: 1.75rem;
+}
+.menu__itemlast-child {
+  margin-right: 1.375rem;
 }
 
 .menu__link {
@@ -177,7 +248,7 @@ header {
 }
 
 .features__item {
-  margin-right: 46px;
+  margin-right: 2.875rem;
 }
 .features__item:last-child {
   margin-right: 0;
@@ -190,21 +261,21 @@ header {
 }
 
 .feature__icon {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .feature__text {
   font-family: "Play";
-  max-width: 122px;
+  max-width: 7.625rem;
 }
 
 .btn {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "Play";
   font-weight: bold;
-  padding: 15px 42px;
+  padding: 0.9375rem 2.625rem;
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   line-height: 1;
   background: #E01F3D;
   color: white;
@@ -216,15 +287,15 @@ header {
   color: black;
 }
 .btn--theme--red {
-  padding: 21px 41px;
-  font-size: 16px;
+  padding: 1.3125rem 2.5625rem;
+  font-size: 1rem;
 }
 .btn--theme--transperent {
   background: transparent;
   text-transform: none;
   font-weight: normal;
-  font-size: 16px;
-  margin-left: -25px;
+  font-size: 1rem;
+  margin-left: -1.5625rem;
 }
 .btn--theme--transperent:hover {
   background: transparent;
@@ -233,7 +304,7 @@ header {
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,9 +318,9 @@ header {
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
   text-align: center;
   text-transform: uppercase;
   font-family: "Play";
@@ -260,7 +331,7 @@ header {
 }
 
 .headline__title {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .headline__subtitle {
@@ -273,7 +344,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 67px;
+  margin-top: 4.1875rem;
 }
 
 .benefits__item {
@@ -286,7 +357,7 @@ header {
 .benefits__item::before {
   content: url(../img/combinedshape.svg);
   position: absolute;
-  top: 58px;
+  top: 3.625rem;
   right: 0;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
@@ -306,11 +377,11 @@ header {
 }
 
 .benefit__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Play";
   font-weight: bold;
-  margin-top: 14px;
-  margin-bottom: 3px;
+  margin-top: 0.875rem;
+  margin-bottom: 0.1875rem;
 }
 
 .benefit__decs {
@@ -319,8 +390,8 @@ header {
 
 .benefit__image-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: 7.875rem;
+  height: 7.875rem;
   position: relative;
   background: #F2F5F4;
   border-radius: 50%;
@@ -328,8 +399,8 @@ header {
 }
 
 .benefit__icon {
-  width: 68px;
-  height: 68px;
+  width: 4.25rem;
+  height: 4.25rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -343,22 +414,22 @@ header {
 .benefits-section::before {
   content: url(../img/vector2.svg);
   position: absolute;
-  bottom: -25px;
+  bottom: -1.5625rem;
   left: 0;
 }
 
 .reviews__display {
   background: #F8FAF9;
-  padding: 50px 45px 34px;
-  margin-bottom: 17px;
+  padding: 3.125rem 2.8125rem 2.125rem;
+  margin-bottom: 1.0625rem;
   position: relative;
   overflow: hidden;
 }
 .reviews__display::before {
   content: "";
   display: block;
-  width: 83px;
-  height: 83px;
+  width: 5.1875rem;
+  height: 5.1875rem;
   background: #fff;
   border-radius: 50%;
   overflow: hidden;
@@ -366,7 +437,7 @@ header {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: -60px;
+  top: -3.75rem;
 }
 
 .reviews__display-iner {
@@ -376,8 +447,8 @@ header {
 }
 
 .reviews-avatar {
-  width: 253px;
-  height: 264px;
+  width: 15.8125rem;
+  height: 16.5rem;
 }
 
 .reviews__avatar-img {
@@ -391,25 +462,25 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 39px;
+  margin-left: 2.4375rem;
 }
 
 .reviews__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 22px;
-  margin-top: 22px;
+  margin-bottom: 1.375rem;
+  margin-top: 1.375rem;
   font-family: "Play";
 }
 
 .reviews__text {
-  margin-bottom: 51px;
+  margin-bottom: 3.1875rem;
   font-family: "Play";
   color: #666666;
 }
 
 .reviews__author {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   font-family: "Play";
 }
@@ -424,9 +495,9 @@ header {
 }
 
 .interactive-avatar {
-  width: 80px;
-  height: 80px;
-  border: 5px solid transparent;
+  width: 5rem;
+  height: 5rem;
+  border: 0.3125rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -458,7 +529,7 @@ header {
 .reviews-section::before {
   content: url(../img/ellipse7.svg);
   position: absolute;
-  bottom: -25px;
+  bottom: -1.5625rem;
   left: 14%;
 }
 
@@ -472,25 +543,25 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 .form__col:last-child {
   margin-right: 0;
-  margin-left: 30px;
+  margin-left: 1.875rem;
 }
 
 .form__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 13px;
+  margin-bottom: 0.8125rem;
 }
 
 .form__block {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 13px;
+  margin-right: 0.8125rem;
 }
 .form__block:last-child {
   margin-right: 0;
@@ -498,13 +569,13 @@ header {
 
 .form__input {
   width: 100%;
-  border: solid 3px transparent;
-  padding: 17px 11px;
-  border-radius: 5px;
+  border: solid 0.1875rem transparent;
+  padding: 1.0625rem 0.6875rem;
+  border-radius: 0.3125rem;
 }
 .form__input--textarea {
   width: 100%;
-  height: 150px;
+  height: 9.375rem;
   resize: none;
 }
 .form__input:focus {
@@ -519,7 +590,7 @@ header {
 }
 
 .form__btns {
-  margin-top: 43px;
+  margin-top: 2.6875rem;
 }
 
 .order-section {
@@ -537,8 +608,8 @@ header {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  margin-right: 15px;
-  margin-top: 18px;
+  margin-right: 0.9375rem;
+  margin-top: 1.125rem;
 }
 .radio--checkbox .radio__visible {
   border-radius: 15%;
@@ -555,17 +626,17 @@ header {
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
   position: relative;
   border-radius: 50%;
   background: white;
-  margin-right: 9px;
+  margin-right: 0.5625rem;
 }
 .radio__visible::before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 0.875rem;
+  height: 0.875rem;
   background: #E01F3D;
   position: absolute;
   display: none;
@@ -584,7 +655,7 @@ header {
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #E01F3D;
@@ -594,18 +665,18 @@ header {
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
   display: block;
   position: relative;
 }
 .fixed-menu__link::before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 0.375rem;
+  height: 0.375rem;
   border-radius: 50%;
   background: #666666;
   position: absolute;

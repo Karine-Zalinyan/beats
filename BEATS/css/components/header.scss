@@ -4,23 +4,11 @@ header{
     justify-content: space-between;
 }
 
-.menu__list{
-display: flex;
-align-items: center;
-}
 
-.menu__item{
-    font-size: 18px;
-    margin-right: 28px;
-
-    &last-child{
-        margin-right: 22px;
-    }
-}
 
 .phone-number{
     font-family: "Play";
-    font-size: 18px;
+    font-size: rem(18px);
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -29,10 +17,12 @@ align-items: center;
 
 .phone-number__icon-elem{
     width: 12x;
-    height: 12px;
-    margin-right: 8px;
+    height: rem(12px);
+    margin-right: rem(8px);
 }
 
-.menu__link{
-    text-decoration: none;
+.phone-number.header__phone-number{
+    @include tablets{
+        display: none;
+    }
 }
