@@ -10,4 +10,8 @@
     color: #666666;
     padding: 0 26%;
     line-height: 1.1;
+
+    @include phones{
+        padding: 0 2%;
+    }
 }

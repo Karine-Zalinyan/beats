@@ -1,0 +1,173 @@
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -45px;
+}
+
+
+.socials__link {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    display: inline-block;
+    position: relative;
+    background-size: contain;
+    background: center center no-repeat;
+
+}
+.socials__item--icon--telegram .socials__link:hover::before {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.socials__item--icon--telegram .socials__link:hover::after {
+    opacity: 1;
+    transition: 0.3s;
+
+}
+.socials__item--icon--telegram .socials__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    background: url('../img/spriteicon.png') -290px -10px;
+}
+
+.socials__item--icon--telegram .socials__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    opacity: 0;
+    background: url('../img/spriteicon.png') -234px -10px;
+}
+
+
+.socials__item--icon--vk .socials__link:hover::before {
+    opacity: 0;
+    transition: 0.3s;
+
+}
+
+.socials__item--icon--vk .socials__link:hover::after {
+    opacity: 1;
+    transition: 0.3s;
+
+}
+
+.socials__item--icon--vk .socials__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    background: url('../img/spriteicon.png') -402px -10px;
+}
+
+.socials__item--icon--vk .socials__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    opacity: 0;
+    background: url('../img/spriteicon.png') -346px -10px;
+}
+
+.socials__item--icon--fb .socials__link:hover::before {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.socials__item--icon--fb .socials__link:hover::after {
+    opacity: 1;
+    transition: 0.3s;
+
+}
+.socials__item--icon--fb .socials__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    background: url('../img/spriteicon.png') -66px -10px;
+}
+
+.socials__item--icon--fb .socials__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    opacity: 0;
+    background: url('../img/spriteicon.png') -10px -10px;
+}
+
+
+.socials__item--icon--insta .socials__link:hover::before {
+    opacity: 0;
+    transition: 0.3s;
+
+}
+
+.socials__item--icon--insta .socials__link:hover::after {
+    opacity: 1;
+    transition: 0.3s;
+
+}
+.socials__item--icon--insta .socials__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    background: url('../img/spriteicon.png') -178px -10px;
+}
+
+.socials__item--icon--insta .socials__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    opacity: 0;
+    background: url('../img/spriteicon.png') -122px -10px;
+}
+
+
+
+.socials__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.socials__item:last-child {
+    margin-right: 0;
+}

@@ -6,5 +6,9 @@
         position: absolute;
         bottom: rem(-25px);
         left: 0;
+
+        @include phones{
+            display: none;
+        }
     }
 }

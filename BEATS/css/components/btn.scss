@@ -11,6 +11,11 @@
     text-decoration: none;
     border: none;
 
+    @include tablets{
+        padding: 1.5rem 2.6rem;
+        
+    }
+
     &:hover{
         background: #9A9A9A;
         color: black;
@@ -27,6 +32,11 @@
         font-weight: normal;
         font-size: rem(16px);
         margin-left: rem(-25px);
+
+        @include tablets{
+                margin-left: 0;
+            
+        }
 
         &:hover{
             background: transparent;

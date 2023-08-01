@@ -1,0 +1,8 @@
+.map-section{
+    position: relative;
+    margin-top: rem(-22px);
+
+    @include phones{
+        margin-top: -12rem;
+    }
+}

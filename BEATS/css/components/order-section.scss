@@ -2,4 +2,12 @@
     background: #181818;
     color: white;
     font-family: "PLay";
+
+    @include tablets{
+        min-height: rem(1000px);
+    }
+}
+
+.order-container{
+    min-height: 100%;
 }

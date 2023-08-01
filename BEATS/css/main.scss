@@ -26,6 +26,17 @@ $z-fixed-menu:100;
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
 @import "layout";
 
+//sprites
+.sound{
+    width: 60px
+}
+.charging{
+    width: 60px;
+}
+.plug{
+    width: 60px
+}
+
 //components
 @import "components/hero";
 @import "components/header";
@@ -45,6 +56,12 @@ $z-fixed-menu:100;
 @import "components/order-section";
 @import "components/radio";
 @import "components/fixed-menu";
+@import "components/hamburger";
+@import "components/footer";
+@import "components/contacts";
+@import "components/map-section";
+@import "components/map";
+@import "components/socials";
 
 
 

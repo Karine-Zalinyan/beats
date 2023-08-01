@@ -20,13 +20,27 @@
     }
 }
 
-.reviews__display-iner{
+.reviews__display-inner{
     display: flex;
+
+    @include tablets{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 20px 0;
+    }
 }
 
-.reviews-avatar{
+.reviews__avatar{
     width: rem(253px);
     height: rem(264px);
+
+    @include tablets {
+        width: rem(130px);
+        height: rem(130px);
+        margin-bottom: rem(20px);
+    }
+
 }
 
 .reviews__avatar-img{
@@ -46,12 +60,23 @@
     margin-bottom: rem(22px);
     margin-top: rem(22px);
     font-family: "Play";
+
+    @include tablets{
+        margin-right: rem(39px);   
+        margin-bottom: rem(13px); 
+    }
+
+
 }
 
 .reviews__text{
     margin-bottom: rem(51px);
     font-family: "Play";
     color: #666666;
+
+    @include tablets{
+        margin-bottom: rem(25px);
+    }
 
 }
 

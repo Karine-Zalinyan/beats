@@ -1,7 +1,7 @@
 .hero{
     background-color: $lightgrey;
     height: 100vh;
-    min-height: rem(652px);
+    min-height: 66.75rem;
     color: $black;
     position: relative;
 
@@ -29,15 +29,21 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        padding: 0 6%;
     
 
     &::before{
-        content: url(../img/ellipse5.png);
+        content: url(../img/beats.svg) ;
+        margin-top: 23px;
+        margin-bottom: 46px;
     }
-}
-}
+}}
+
 
 .hero__icons-section{
+    margin-top: rem(-304px);
+
     @include tablets {
         display: none;
     }
@@ -49,7 +55,7 @@
     justify-content: space-between;
     height: 100%;
     padding: rem(32px) 0 rem(45px) 0;
-    background: url(../img/ellipse5.png) left 96% top 72% / 52% auto no-repeat;
+    background: url(../img/ellipse5.png) left 96% top 74% / 52% auto no-repeat;
 
     @include tablets {
         background: none;
@@ -71,7 +77,12 @@
     padding-right: 10%;
     line-height: 1.1;
 
-    @include tablets{
+    @include tablets {
         padding: 0 25%;
+        margin-bottom: rem(29px);
+    }
+
+    @include phones {
+        padding: 0 13%;
     }
 }
