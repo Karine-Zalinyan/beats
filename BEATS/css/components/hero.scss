@@ -1,9 +1,14 @@
 .hero{
     background-color: $lightgrey;
     height: 100vh;
-    min-height: 66.75rem;
+    min-height: rem(652px);
     color: $black;
     position: relative;
+
+    @include tablets{
+        min-height: rem(1000px);
+
+    }
 
     &::before{
         content: url(../img/rectangle14.svg);
@@ -21,6 +26,7 @@
 
 .hero__title-section{
     width: 40%;
+    margin-top: -19.5rem;
 
     @include tablets {
         width: 100%;
@@ -35,14 +41,15 @@
 
     &::before{
         content: url(../img/beats.svg) ;
-        margin-top: 23px;
-        margin-bottom: 46px;
+        margin-bottom: rem(82px);
+        margin-top: rem(373px);
     }
 }}
 
 
 .hero__icons-section{
     margin-top: rem(-304px);
+    margin-bottom: rem(-102px);
 
     @include tablets {
         display: none;
@@ -73,7 +80,7 @@
 
 .hero__title-desc{
     font-size: rem(21px);
-    margin-bottom: rem(45px);
+    margin-bottom: 2.5rem;
     padding-right: 10%;
     line-height: 1.1;
 

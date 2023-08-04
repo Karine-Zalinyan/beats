@@ -98,9 +98,14 @@ img {
 .hero {
   background-color: #F5F5F5;
   height: 100vh;
-  min-height: 66.75rem;
+  min-height: 40.75rem;
   color: #292929;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 62.5rem;
+  }
 }
 .hero::before {
   content: url(../img/rectangle14.svg);
@@ -116,6 +121,7 @@ img {
 
 .hero__title-section {
   width: 40%;
+  margin-top: -19.5rem;
 }
 @media screen and (max-width: 768px) {
   .hero__title-section {
@@ -141,13 +147,14 @@ img {
   }
   .hero__title-section::before {
     content: url(../img/beats.svg);
-    margin-top: 23px;
-    margin-bottom: 46px;
+    margin-bottom: 5.125rem;
+    margin-top: 23.3125rem;
   }
 }
 
 .hero__icons-section {
   margin-top: -19rem;
+  margin-bottom: -6.375rem;
 }
 @media screen and (max-width: 768px) {
   .hero__icons-section {
@@ -187,7 +194,7 @@ img {
 
 .hero__title-desc {
   font-size: 1.3125rem;
-  margin-bottom: 2.8125rem;
+  margin-bottom: 2.5rem;
   padding-right: 10%;
   line-height: 1.1;
 }
@@ -914,6 +921,7 @@ header {
 }
 
 .footer {
+  font-family: "play";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -963,6 +971,12 @@ header {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .contacts__place {
+    margin-bottom: 0.8125rem;
+  }
+}
+
 .map-section {
   position: relative;
   margin-top: -1.375rem;
@@ -985,6 +999,14 @@ header {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: -45px;
+}
+@media screen and (max-width: 480px) {
+  .socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 3.6875rem;
+  }
 }
 
 .socials__link {

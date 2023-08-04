@@ -11,6 +11,12 @@
     }
 }
 
+.contacts__place{
+     
+    @include phones{
+        margin-bottom: rem(13px);
+    }
+}
 
 
 

@@ -2,6 +2,11 @@
     display: flex;
     justify-content: flex-end;
     margin-top: -45px;
+
+    @include phones{
+        justify-content: center;
+        padding-top: rem(59px);
+    }
 }
 
 
@@ -35,6 +40,7 @@
     width: 36px;
     height: 36px;
     background: url('../img/spriteicon.png') -290px -10px;
+    
 }
 
 .socials__item--icon--telegram .socials__link::after {
@@ -166,6 +172,8 @@
     display: inline-block;
     vertical-align: middle;
     margin-right: 6px;
+
+   
 }
 
 .socials__item:last-child {
