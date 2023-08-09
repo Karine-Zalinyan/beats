@@ -1,0 +1,51 @@
+.body_closed {
+    height: 100%;
+    overflow: hidden;
+}
+.slider {
+    width: 100%;
+    left: 0;
+    transition: .5s;
+}
+
+.slider__item {
+    flex-shrink: 0;
+}
+
+
+.option:hover > .option__open {
+    display: block;
+}
+
+.modal {
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: -10;
+    transition: .5s;
+}
+
+.open-modal {
+    cursor: pointer;
+    width: max-content;
+}
+
+.modal_opened {
+    opacity: 1;
+    z-index: 10;
+}
+
+.modal__close {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    cursor: pointer;
+}
