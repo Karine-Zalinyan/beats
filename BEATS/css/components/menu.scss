@@ -27,3 +27,21 @@ padding-top: rem(5px);
         text-decoration: none;
         white-space: nowrap;
     }
+
+    .menu--vertical{
+        background: black;
+        padding: 86px;   
+    }
+
+    .vertical-menu__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .vertical-menu__item{
+
+        font-size: rem(36px);
+    }
