@@ -1485,12 +1485,6 @@ header {
     display: none;
   }
 }
-.option__icon {
-  width: 3.4375rem;
-  height: 3.75rem;
-  fill: #fff;
-}
-
 .option__open {
   display: none;
   border-radius: 5px;
